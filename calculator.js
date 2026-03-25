@@ -1,19 +1,19 @@
-function addNumbers(a, b) {
-    return a + b;
+const calculator = {
+    add(a, b) {
+        return a + b;
+    },
+    subtract(a, b) {
+        return a - b;
+    },
+    multiply(a, b) {
+        return a * b;
+    },
+    divide(a, b) {
+        return a / b;
+    }
 }
-console.log(addNumbers(6, 7));
 
-function subtractNumbers(a, b) {
-    return a - b;
-}
-console.log(subtractNumbers(6, 7));
-
-function multiplyNumbers(a, b) {
-    return a * b;
-}
-console.log(multiplyNumbers(6, 7));
-
-function divideNumbers(a, b) {
-    return a / b;
-}
-console.log(divideNumbers(6, 7));
+console.log(calculator.add(20, 5));
+console.log(calculator.subtract(20, 5));
+console.log(calculator.multiply(20, 5));
+console.log(calculator.divide(20, 5));
